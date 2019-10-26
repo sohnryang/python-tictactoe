@@ -1,7 +1,7 @@
 DRAW = 'draw'
 UNDEFINED = 'undef'
 
-class Board:
+class Model:
     def __init__(self):
         self.clear()
 
