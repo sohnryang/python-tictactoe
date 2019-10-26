@@ -15,6 +15,9 @@ class Model:
         for _ in range(3):
             self.board_data.append([None] * 3)
 
+    def occupied(self, x, y):
+        return self.board_data[x][y] is not None
+
     def check_winner(self):
         check_pos = (((0, 0), (1, 1), (2, 2)), ((0, 2), (1, 1), (2, 0)),
                      ((0, 0), (0, 1), (0, 2)), ((1, 0), (1, 1), (1, 2)),
